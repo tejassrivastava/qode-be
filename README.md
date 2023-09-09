@@ -86,6 +86,20 @@ http://localhost:3000/
 }
 ```
 
+To run tests
+
+`npm run test`
+
+
+**Current Test Case Result:**
+
+
+[![](https://github.com/tejassrivastava/qode-be/blob/main/TestResult.png)](https://github.com/tejassrivastava/qode-be/blob/main/TestResultQode.png)
+
+**Current Test Coverage Result:**
+
+[![](https://github.com/tejassrivastava/qode-be/blob/main/TestCoverage.png)](https://github.com/tejassrivastava/qode-be/blob/main/TestCoverageQode.png)
+
 ## Authors
 
 - [@tejassrivastava](https://www.github.com/tejassrivastava)
