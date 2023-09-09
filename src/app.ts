@@ -21,7 +21,7 @@ interface IPhoto extends Document {
   filename: string;
   url: string;
   comment: string;
-  date: { type: Date; required: true; default: Date.now };
+  date: { type: Date; required: true; default: Date};
 }
 
 // Create a schema for photos
