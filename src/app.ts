@@ -10,12 +10,24 @@ const app: express.Application = express();
 app.use(cors());
 app.use(express.static("public"));
 
-// Connect to MongoDB using mongoose
-mongoose.connect(
-  "mongodb+srv://kogoh87581:1jaOgwB8DSYY45u0@cluster0.lspzhku.mongodb.net/qode?retryWrites=true&w=majority",
-  { autoCreate: true}
-);
+import { MongoMemoryServer } from "mongodb-memory-server";
 
+let mongod = null;
+
+const connectDB = async () => {
+  let mongo_uri =
+    "mongodb+srv://kogoh87581:1jaOgwB8DSYY45u0@cluster0.lspzhku.mongodb.net/qode?retryWrites=true&w=majority";
+
+  if (process.env.NODE_ENV === "test") {
+    mongod = await MongoMemoryServer.create();
+    mongo_uri = mongod.getUri();
+  }
+
+  await mongoose.connect(mongo_uri, {   
+    autoCreate: true,    
+  });
+};
+connectDB();
 // Define an interface for photo documents
 interface IPhoto extends Document {
   filename: string;
@@ -121,3 +133,4 @@ app.get("/clean", async (req: Request, res: Response) => {
 app.listen(3000, () => {
   console.log("Server started on port 3000.");
 });
+export default app
