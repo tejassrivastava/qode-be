@@ -94,11 +94,11 @@ To run tests
 **Current Test Case Result:**
 
 
-[![](https://github.com/tejassrivastava/qode-be/blob/main/TestResult.png)](https://github.com/tejassrivastava/qode-be/blob/main/TestResultQode.png)
+[![](https://github.com/tejassrivastava/qode-be/blob/main/TestResultQode.png)](https://github.com/tejassrivastava/qode-be/blob/main/TestResultQode.png)
 
 **Current Test Coverage Result:**
 
-[![](https://github.com/tejassrivastava/qode-be/blob/main/TestCoverage.png)](https://github.com/tejassrivastava/qode-be/blob/main/TestCoverageQode.png)
+[![](https://github.com/tejassrivastava/qode-be/blob/main/TestCoverageQode.png)](https://github.com/tejassrivastava/qode-be/blob/main/TestCoverageQode.png)
 
 ## Authors
 
