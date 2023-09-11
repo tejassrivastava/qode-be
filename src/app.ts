@@ -69,7 +69,7 @@ app.post(
     // Create a new photo document with the uploaded file and comments
     const photo = new Photo({
       filename: req?.file?.filename,
-      url: `https://${req.hostname}/` + req?.file?.filename,
+      url: `http://localhost:3000/` + req?.file?.filename,
       comment: req.body.comment,
       date: Date.now(),
     });
